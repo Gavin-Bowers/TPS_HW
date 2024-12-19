@@ -1,3 +1,5 @@
+use repeating_substring::prefix_tree;
+
 fn main() {
 }
 
@@ -5,6 +7,7 @@ fn repeating_substring(input: &str) -> &str {
     dp_repeating_substring(input)
 }
 
+//This has a bug that only shows up on one test case
 fn dp_repeating_substring(input: &str) -> &str {
     // Edge case checking (prevents out of bounds)
     let len = input.len(); 
